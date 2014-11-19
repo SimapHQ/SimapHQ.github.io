@@ -40,6 +40,10 @@ label {
   font-weight: inherit;
 }
 
+img {
+  max-width: 40px
+}
+
 .container {
   width: 100%;
   padding: 0;
@@ -72,6 +76,10 @@ label {
       color: $default-hover-color;
     }
   }
+}
+
+.logo-container {
+  text-align: center;
 }
 
 .content {
