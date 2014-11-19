@@ -83,6 +83,14 @@ label {
     border-color: $footer-text-color;
     margin-top: 10px;
   }
+
+  p {
+    line-height: 1.8em;
+  }
+
+  .share-button {
+    padding: 10px;
+  }
 }
 
 .spacer {
