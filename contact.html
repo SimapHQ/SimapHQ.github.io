@@ -7,11 +7,9 @@ title: Simap - Contact
   <h3>Questions? Comments?</h3>
   <p>
     <a href="https://twitter.com/intent/tweet?screen_name=SimapHQ"
-       onClick="_gaq.push(['_trackEvent', 'Twitter', 'Mention']);"
        class="twitter-mention-button"
        data-related="SimapHQ">Tweet to @SimapHQ</a>
     <a href="https://twitter.com/SimapHQ"
-       onClick="_gaq.push(['_trackEvent', 'Twitter', 'Follow']);"
        class="twitter-follow-button"
        data-show-count="false">Follow @SimapHQ</a>
     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
@@ -20,7 +18,7 @@ title: Simap - Contact
   <h3>Found a bug?</h3>
   <p>
     <a href="https://github.com/SimapHQ/simaphq.github.io/issues/new"
-       onClick="_gaq.push(['_trackEvent', 'GitHub', 'Open Issue']);"
+       onClick="ga('send', 'event', 'Contact', 'Open GitHub Issue');"
        target="_blank">
       <button class="btn btn-success">Open an issue</button>
     </a>
