@@ -1,0 +1,9 @@
+baseurl:     /
+destination: ./_site
+plugins:     ./_plugins
+highlighter: pygments
+future:      true
+permalink:   date
+markdown:    redcarpet
+redcarpet:
+  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript", "with_toc_data"]

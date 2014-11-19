@@ -1,0 +1,117 @@
+---
+---
+
+$second-color: #303030;
+$alt-second-color: #252525;
+$footer-text-color: #525252;
+$default-hover-color: #80bd01;
+$default-text-color: white;
+
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* Space out content a bit */
+body {
+  background-color: #1d1d1d;
+  font-weight: lighter;
+}
+
+h3, h4, h5 {
+  font-weight: inherit;
+}
+
+a {
+  cursor: pointer;
+}
+
+h5,
+a:hover,
+a > *:hover {
+  color: $default-hover-color;
+  text-decoration: none;
+}
+
+label {
+  color: $default-hover-color;
+  font-weight: inherit;
+}
+
+.container {
+  width: 100%;
+  padding: 0;
+}
+
+.jumbotron {
+  background-color: #1d1d1d;
+  color: $default-text-color;
+}
+
+/* Custom page header */
+.header-background {
+  background-color: $second-color;
+
+  .header {
+    .navbar-collapse,
+    .navbar-default,
+    .navbar-toggle {
+      background-color: inherit;
+      border-color: $second-color;
+    }
+
+    .navbar-nav > li > a,
+    .navbar-brand {
+      color: $default-text-color;
+    }
+
+    .navbar-nav > li > a:hover,
+    .navbar-brand:hover {
+      color: $default-hover-color;
+    }
+  }
+}
+
+.content {
+  color: $default-text-color;
+  padding: 0px 15px 10px;
+  text-align: center;
+
+  hr {
+    border-color: $footer-text-color;
+    margin-top: 10px;
+  }
+}
+
+.spacer {
+  padding: 5px;
+}
+
+/* Custom page footer */
+.footer {
+  border-top: 1px solid $second-color;
+  color: $footer-text-color;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  .header,
+  .content {
+    margin: 0 auto;
+    max-width: 730px;
+  }
+
+  .header-background,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .header-background {
+    margin-bottom: 30px;
+  }
+}
