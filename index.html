@@ -9,12 +9,20 @@ title: Simap
 <div class="jumbotron"></div>
 <div>
   <span class="col-xs-4 share-button">
-    <a href="https://twitter.com/share" class="twitter-share-button" data-url="https://simaphq.github.io" data-via="SimapHQ" data-count="none">Tweet</a>
+    <a href="https://twitter.com/share"
+       onClick="_gaq.push(['_trackEvent', 'Twitter', 'Share']);"
+       class="twitter-share-button"
+       data-url="https://simaphq.github.io"
+       data-via="SimapHQ"
+       data-count="none">Tweet</a>
     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
   </span>
 
   <span class="col-xs-4 share-button">
-    <div class="fb-share-button" data-href="https://simaphq.github.io" data-layout="button"></div>
+    <div class="fb-share-button"
+         onClick="_gaq.push(['_trackEvent', 'Facebook', 'Share']);"
+         data-href="https://simaphq.github.io"
+         data-layout="button"></div>
   </span>
 
   <span class="col-xs-4 share-button">
@@ -22,6 +30,10 @@ title: Simap
     <!-- Place this tag in your head or just before your close body tag. -->
     <script src="https://apis.google.com/js/platform.js" async defer></script>
     <!-- Place this tag where you want the share button to render. -->
-    <div class="g-plus" data-action="share" data-annotation="none" data-href="https://simaphq.github.io"></div>
+    <div class="g-plus"
+         onClick="_gaq.push(['_trackEvent', 'Google+', 'Share']);"
+         data-action="share"
+         data-annotation="none"
+         data-href="https://simaphq.github.io"></div>
   </span>
 </div>
